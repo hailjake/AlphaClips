@@ -6,9 +6,19 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="home">
+  <button ion-button full (click)="takePhoto()" >
+    <ion-icon name="camera"></ion-icon>SNAP
+    </button>
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 >
+          <ion-card class="block">
+          <ion-icon  name="trash" class="deleteIcon"></ion-icon>
+          <img src="someimage.png" />
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 </ion-content>
